@@ -2,8 +2,10 @@
 
 Goose Manager for Mysqlgoose Database Abstraction.
 
-A "Goose Manager" provides a consistent way to access an object or
-relational database. A "Mysqlgoose Manager" allows
+A "[Goose Manager](https://aponica.com/docs/goosemgr-php)" provides a
+consistent way to access an object or relational database. 
+
+A "Mysqlgoose Manager" allows
 [Mysqlgoose](https://aponica.com/docs/mysqlgoose-php)
 to be managed consistently with other types of "Goose."
 
