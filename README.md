@@ -1,4 +1,4 @@
-# aponica/goosemgr-php
+# aponica/goosemgr-mysqlgoose-php
 
 Goose Manager for Mysqlgoose Database Abstraction.
 
@@ -8,7 +8,7 @@ relational database. A "Mysqlgoose Manager" allows
 to be managed consistently with other types of "Goose."
 
 An equivalent JS package, 
-[@aponica/goosemgr-js](https://aponica.com/docs/goosemgr-mysqlgoose-js), 
+[@aponica/goosemgr-mysqlgoose-js](https://aponica.com/docs/goosemgr-mysqlgoose-js), 
 is maintained for consistency.
 
 <a name="installation"></a>
