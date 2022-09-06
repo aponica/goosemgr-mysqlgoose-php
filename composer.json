@@ -1,0 +1,26 @@
+{
+  "name": "aponica/goosemgr-mysqlgoose-php",
+  "version": "1.0.0",
+  "description": "Goose Manager for Mysqlgoose Database Abstraction.",
+  "homepage" : "https://aponica.com/docs/goosemgr-mysqlgoose-php",
+  "funding": [ { "type": "paypal",
+    "url": "https://www.paypal.com/biz/fund?id=BEHTAS8WARM68" } ],
+  "keywords": ["goosemgr","database","interface","model","mysqlgoose"],
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    { "name": "Opplaud LLC", "email": "dev.support@aponica.com" }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "aponica/goosemgr-php": "^1.0",
+    "aponica/mysqlgoose-php": "^2.1"
+  },
+  "autoload": {
+    "files": [
+      "src/cMysqlgooseMgr.php"
+    ],
+    "psr-4": {"Aponica\\MysqlgooseMgr\\": "src"}
+  }
+}
