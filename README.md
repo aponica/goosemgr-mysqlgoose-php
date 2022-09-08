@@ -37,13 +37,9 @@ then use the models as specified in the
 documentation:
 
 ```php
-use \Aponica\MysqlgooseMgr\cMysqlgooseMgr;
-
-$mgr = new \Aponica\MysqlgooseMgr\cMysqlgooseMgr(
-  json_decode( file_get_contents( 'definitions.json', true ), true ) );
+$mgr = new \Aponica\MysqlgooseMgr\cMysqlgooseMgr( 'definitions.json' );
   
-$mgr->fConnect( json_decode( 
-  file_get_contents( 'mysql.json', true ), true ) );
+$mgr->fConnect( 'mysql.json' );
 
 $mgr->fiModel( 'customer' )->findById( 1234 );
 ```
