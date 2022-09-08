@@ -14,19 +14,12 @@ final class cMysqlgooseMgrTest extends TestCase {
 
     try {
 
-      $iGooseMgr = new cMysqlgooseMgr( json_decode(
-        file_get_contents(
-          'vendor/aponica/mysqlgoose-php/tests-config/definitions.json',
-          true ),
-        true
-        ) );
+      set_include_path( get_include_path() . PATH_SEPARATOR .
+        'vendor/aponica/mysqlgoose-php/tests-config' );
 
-      $iGooseMgr->fConnect( json_decode(
-        file_get_contents(
-          'vendor/aponica/mysqlgoose-php/tests-config/config_mysql.json',
-          true ),
-        true
-        ) );
+      $iGooseMgr = new cMysqlgooseMgr( 'definitions.json' );
+
+      $iGooseMgr->fConnect( 'config_mysql.json' );
 
       $hCustomer = $iGooseMgr->fiModel( 'customer' )->findById( 1 );
 
