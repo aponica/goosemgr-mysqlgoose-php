@@ -21,6 +21,8 @@ final class cMysqlgooseMgrTest extends TestCase {
 
       $iGooseMgr->fConnect( 'config_mysql.json' );
 
+      $this->assertSame( '$Mysqlgoose$POPULATE$', $iGooseMgr->fzPopulate() );
+
       $hCustomer = $iGooseMgr->fiModel( 'customer' )->findById( 1 );
 
       $this->assertIsArray( $hCustomer );
