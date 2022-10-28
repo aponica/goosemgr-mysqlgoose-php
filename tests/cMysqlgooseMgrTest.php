@@ -14,12 +14,11 @@ final class cMysqlgooseMgrTest extends TestCase {
 
     try {
 
-      set_include_path( get_include_path() . PATH_SEPARATOR .
-        'vendor/aponica/mysqlgoose-php/tests-config' );
+      $iGooseMgr = new cMysqlgooseMgr( __DIR__ .
+        '/../vendor/aponica/mysqlgoose-php/tests-config/definitions.json' );
 
-      $iGooseMgr = new cMysqlgooseMgr( 'definitions.json' );
-
-      $iGooseMgr->fConnect( 'config_mysql.json' );
+      $iGooseMgr->fConnect( __DIR__ .
+        '/../vendor/aponica/mysqlgoose-php/tests-config/config_mysql.json' );
 
       $this->assertSame( '$Mysqlgoose$POPULATE$', $iGooseMgr->fzPopulate() );
 
