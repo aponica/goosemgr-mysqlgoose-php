@@ -1,6 +1,6 @@
 {
   "name": "aponica/goosemgr-mysqlgoose-php",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Goose Manager for Mysqlgoose Database Abstraction.",
   "homepage" : "https://aponica.com/docs/goosemgr-mysqlgoose-php",
   "funding": [ { "type": "paypal",
@@ -15,7 +15,7 @@
   "require": {
     "php": ">=8.1",
     "aponica/goosemgr-php": "^2.1",
-    "aponica/mysqlgoose-php": "^2.1"
+    "aponica/mysqlgoose-php": "^2.2"
   },
   "autoload": {
     "files": [
